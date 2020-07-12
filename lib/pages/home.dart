@@ -1,3 +1,4 @@
+import 'package:fav_yt/delegate/data_search.dart';
 import 'package:flutter/material.dart';
 
 class Home extends StatelessWidget {
@@ -17,7 +18,9 @@ class Home extends StatelessWidget {
             child: Text("0"),
           ),
           IconButton(icon: Icon(Icons.star), onPressed: (){}),
-          IconButton(icon: Icon(Icons.search), onPressed: (){}),
+          IconButton(icon: Icon(Icons.search), onPressed: (){
+            showSearch(context: context, delegate: DataSearch());
+          }),
         ],
       ),
       
